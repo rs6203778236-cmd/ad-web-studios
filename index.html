@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AD Web Studios | Premium Websites</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #090909;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --gold: #d4af37;
+    --lightgold: #f5d76e;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    border-bottom: 1px solid #292929;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--gold);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.hero small {
+    color: var(--gold);
+    letter-spacing: 5px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 8vw, 85px);
+    margin: 25px 0;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero p {
+    color: #aaa;
+    max-width: 550px;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: var(--gold);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: var(--lightgold);
+}
+
+section {
+    padding: 85px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.section-title span {
+    color: var(--gold);
+}
+
+.about {
+    background: #111;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #aaa;
+    line-height: 1.9;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #151515;
+    padding: 30px;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: var(--gold);
+}
+
+.card h3 {
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+.projects {
+    background: #111;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.project {
+    background: #191919;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.project-top {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--gold);
+    background: #222;
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.project-content h3 {
+    margin-bottom: 12px;
+}
+
+.project-content p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #aaa;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111;
+    color: #888;
+    border-top: 1px solid #292929;
+}
+
+footer span {
+    color: var(--gold);
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 12px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">AD WEB STUDIOS.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <small>CREATIVE WEB DEVELOPMENT</small>
+
+    <h1>We Build <span>Digital</span><br>Experiences.</h1>
+
+    <p>
+        Modern, responsive and professional websites
+        designed to help businesses build their online presence.
+    </p>
+
+    <a href="#projects" class="btn">EXPLORE OUR WORK</a>
+</div>
+
+<section class="about" id="about">
+    <h2 class="section-title">About <span>Us</span></h2>
+
+    <p>
+        Welcome to AD Web Studios. We create modern and
+        visually appealing websites for businesses, gyms,
+        coaching institutes and growing brands.
+        Our focus is clean design, responsive layouts
+        and a great user experience.
+    </p>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our <span>Services</span></h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Business Websites</h3>
+            <p>Professional websites to showcase your business online.</p>
+        </div>
+
+        <div class="card">
+            <h3>Gym Websites</h3>
+            <p>Modern websites for gyms and fitness businesses.</p>
+        </div>
+
+        <div class="card">
+            <h3>Coaching Websites</h3>
+            <p>Websites for coaching institutes and educational brands.</p>
+        </div>
+
+        <div class="card">
+            <h3>Responsive Design</h3>
+            <p>Layouts designed to work across mobile, tablet and desktop.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h2 class="section-title">Our <span>Projects</span></h2>
+
+    <div class="project-grid">
+
+        <div class="project">
+            <div class="project-top">IRON FORCE</div>
+            <div class="project-content">
+                <h3>Gym Website</h3>
+                <p>A black and neon-green fitness website concept.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-top">EXCEL ACADEMY</div>
+            <div class="project-content">
+                <h3>Coaching Website</h3>
+                <p>A premium educational website concept.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Let's Build <span>Together</span></h2>
+
+    <p>
+        Have an idea for a website?<br>
+        Get in touch with AD Web Studios.
+    </p>
+
+    <a href="https://github.com/" class="btn">VISIT GITHUB</a>
+</section>
+
+<footer>
+    © 2026 <span>AD WEB STUDIOS</span>. All Rights Reserved.
+</footer>
+
+</body>
+</html>
