@@ -377,7 +377,56 @@ footer span {
     </div>
 </section> 
 <section class="contact" id="contact">
-    <h2 class="section-title">Let's Build <span>Together</span></h2>
+<section id="enquiry" style="background:#111; text-align:center;">
+
+    <h2 class="section-title">
+        Start Your <span>Project</span>
+    </h2>
+
+    <form id="enquiryForm"
+    style="max-width:450px; margin:auto;">
+
+        <input type="text" id="clientName"
+        placeholder="Your Name" required
+        style="width:100%; padding:15px; margin:10px 0;">
+
+        <input type="text" id="businessName"
+        placeholder="Business Name" required
+        style="width:100%; padding:15px; margin:10px 0;">
+
+        <textarea id="requirements"
+        placeholder="What kind of website do you need?"
+        required
+        style="width:100%; padding:15px; margin:10px 0;">
+        </textarea>
+
+        <button type="submit" class="btn">
+            SEND ENQUIRY
+        </button>
+
+    </form>
+</section>
+
+<script>
+document.getElementById("enquiryForm")
+.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const name = document.getElementById("clientName").value;
+    const business = document.getElementById("businessName").value;
+    const requirements = document.getElementById("requirements").value;
+
+    const message =
+    "New Website Enquiry%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Business: " + encodeURIComponent(business) + "%0A" +
+    "Requirements: " + encodeURIComponent(requirements);
+
+    alert("Your enquiry form is ready. A business WhatsApp number must be configured before sending enquiries.");
+
+});
+    </script>    <h2 class="section-title">Let's Build <span>Together</span></h2>
 
     <p>
         Have an idea for a website?<br>
